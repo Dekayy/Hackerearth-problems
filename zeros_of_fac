@@ -1,0 +1,25 @@
+/* program to find trailing zeros in faculty 
+of a number e.g. 100! */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+
+	int num, count = 0, power = 5;
+
+	scanf("%i", &num);
+
+	while (power <= num)
+	{
+		count = count + num / power;
+		power = power * 5;
+	}
+
+	printf("%i\n", count);
+
+	return 0;
+
+
+}
